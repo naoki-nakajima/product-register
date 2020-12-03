@@ -1,8 +1,8 @@
 #container 
-  %header#grobal_header
-    #grobal_header__bar
+  %header#gbl_header
+    #gbl_header_bar
       .container
-        #header_sarch
+        #hdr_sarch
           = link_to ""
           -#検索フォームを実装する
           %p.input
@@ -13,13 +13,15 @@
         .no_login
           %p.login
             %i.far.fa-user
-            = link_to ""
+              = link_to ""
+              ログイン
             -#ログインボタンを作る
           %p.regist
-            新規会員登録
+            %i.over 
+              新規会員登録
 
 
-    %article#grobal_main
+    %article#gbl_main
       #selsect_sex_type
         %nav
           %ul
@@ -31,7 +33,7 @@
               WOMEN
             %li.kids
               KIDS
-      #grobal_body.clearfix
+      #gbl_body.clearfix
         %nav#switch_menu
           %ul.clearfix
             %li.current
@@ -330,5 +332,31 @@
                     .btn_block
                       .btn_follow
                         %p.btn
+            #sidebar
+            
     %footer#grobal_footer
+      .container
+        #fInner.clearfix
+          #fService.cection
+            %ul.clearfix
+              %li fashon
+          #fContents.section
+            %ul.clerafix
+              %li コーディネート一覧
+          #fHelp.section
+            %ul.clerafix
+              %li ヘルプ
+          #fMobile.section
+            %ul.clearfix
+              %li アプリ
+              %li.sns.icon_twitter twitter
+        #fCorporate.clerafix
+          %ul.clearfix
+            %li
+          #language_switch
+        #fCopyright.icon_font
+          #copy.claerfix
+            %p
+            %p
+        
       
