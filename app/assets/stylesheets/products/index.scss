@@ -1,7 +1,6 @@
 #container {
   position: relative;
   width: 100%;
-  background: #f6f7f8;
   header#gbl_header {
     width: 100%;
     position: fixed;
@@ -26,17 +25,18 @@
         box-sizing: border-box;
         
         #hdr_sarch {
+          border-radius: 3px;
           position: absolute;
-          left: -30px;
+          left: -38px;
           display: flex;
           align-items: center;
           justify-content: center;
           border: 1px solid #ddd;
           background: #f5f5f5;
-          margin: 7px 15px 7px 36px;
+          margin: 9px 15px 7px 36px;
           font-size: 13px;
-          height: 36px;
-          width: 264px;
+          height: 34px;
+          width: 263px;
         
           p {
             span.icon_font {
@@ -101,15 +101,18 @@
       }
     }
   }
-  /*---------------/header-----------------*/
+/*---------------/header---------------------------*/
 
   article#gbl_main {
+    background: #f6f7f8;
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: scroll;
     #select_sex_type {
+      margin-top: -13px;
       width: 100%;
+      height: 46px;
       background: #fff;
       border-bottom: 1px #ddd solid;
       nav {
@@ -122,13 +125,120 @@
             display: inline-block;
             font-size: 17px;
             text-align: center;
-            line-height: 1.2;
+            line-height: 46px;
             color: #888;
+          }
+        }
+      }
+    }
+/*-----------------------------------------------*/
+    #gbl_body{
+      width: 100%;
+      nav#switch_menu {
+        width: 280px;
+        margin: 13px 0 0 530px;
+        ul {
+          width: 280px;
+          display: flex;
+          li {
+            list-style-type: none;
+            text-align: center;
+            font-size: 13px;
+            width: 140px;
+            background: #fff;
+            a {
+              background: #fff;
+              color: rgba(170, 170, 170, 0.9);
+              display: block;
+              border: 1px #ddd solid;
+              border-radius: 0 7px 7px 0;
+              line-height: 32px;
+              padding: 1px 0 0 0;
+            }
+          }
+          .current {
+            color: #fff;
+            a {
+              display: block;
+              border-radius: 7px 0 0 7px;
+              border-right: none;
+              line-height: 32px;
+              background: #333;
+              color: #fff;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+
+  footer#gbl_footer {
+    margin-top: 40px;
+    padding: 52px 0 50px 0;
+    background: #fff;
+    width: 100%;
+    border-top: 1px #ddd solid;
+    .container {
+      width: 990px;
+      margin: 0 auto;
+      #fInner {
+        #fService.section {
+          width: 130px;
+          ul {
+            float: left;
+            li {
+              font-size: 12px;
+              list-style: none;
+              a {
+                display: inline-block;
+                padding: 2px 0 2px 0;
+              }
+            }
+          }
+        }
+        #fContents.section {
+          width: 416px;
+          float: left;
+          border-left: 1px #ddd solid;
+          ul {
+            li {
+              list-style: none;
+            }
+          }
+        }
+        #fHelp.section {
+          ul {
+            li {
+              
+            }
+          }
+        }
+        #fMobile.section {
+          ul {
+            li {
+              
+            }
+          }
+        }
+      #fCorporate {
+        ul {
+          li {
+
+          }
+        }
+      }
+        #language_switch {
+
+        }
+      }
+      #fCopyright.icon_font {
+        #copy {
+          p {
+
           }
         }
       }
     }
   }
 }
-
-
