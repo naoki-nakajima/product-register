@@ -1,6 +1,9 @@
 #container {
   position: relative;
   width: 100%;
+  height: 100vh;
+    position: relative;
+    overflow: scroll;
   header#gbl_header {
     width: 100%;
     position: fixed;
@@ -106,9 +109,7 @@
   article#gbl_main {
     background: #f6f7f8;
     width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: scroll;
+    
     #select_sex_type {
       margin-top: -13px;
       width: 100%;
@@ -178,13 +179,67 @@
     padding: 52px 0 50px 0;
     background: #fff;
     width: 100%;
+    height: 100vh;
     border-top: 1px #ddd solid;
     .container {
       width: 990px;
       margin: 0 auto;
       #fInner {
-        #fService.section {
+        display: flex;
+        #fService{
           width: 130px;
+          
+          ul {
+            padding: 0;
+            li {
+              font-size: 12px;
+              list-style: none;
+              a {
+                display: inline-block;
+                padding: 2px 0px;;
+              }
+            }
+          }
+          
+        }
+          
+          
+        #fContents {
+          width: 416px;
+          border-left: 1px #ddd solid;
+          ul {
+            float: left;
+            width: 162px;
+            li {
+              font-size: 12px;
+              list-style: none;
+              a {
+                display: inline-block;
+                padding: 2px 0;
+              }
+            }
+          }
+          
+        }
+        #fHelp {
+          width: 264px;
+          border-left: 1px #ddd solid;
+        
+          ul {
+            li {
+              font-size: 12px;
+              list-style: none;
+              a {
+                display: inline-block;
+                padding: 2px 0;
+              }
+            }
+          }
+          
+        }
+        #fMobile {
+          width: 180px;
+          border-left: 1px #ddd solid;
           ul {
             float: left;
             li {
@@ -192,35 +247,13 @@
               list-style: none;
               a {
                 display: inline-block;
-                padding: 2px 0 2px 0;
+                padding: 2px 0;
               }
             }
           }
+          
         }
-        #fContents.section {
-          width: 416px;
-          float: left;
-          border-left: 1px #ddd solid;
-          ul {
-            li {
-              list-style: none;
-            }
-          }
-        }
-        #fHelp.section {
-          ul {
-            li {
-              
-            }
-          }
-        }
-        #fMobile.section {
-          ul {
-            li {
-              
-            }
-          }
-        }
+        
       #fCorporate {
         ul {
           li {
