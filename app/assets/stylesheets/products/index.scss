@@ -181,27 +181,47 @@
         }
       }
       #content_container {
+        width: 990px;
+        margin: 30px auto 0 auto;
         #content {
-          section {
-            h2 {
-
+          margin: 0 auto;
+          width: 780px;
+          section.pickupTagList {
+            padding-bottom: 80px;
+            h2.title{
+              font-size: 18px;
+              clear: both;
             }
-            ul {
+            ul.img_after_load {
               li {
+                width: 264px;
+                border: 1px #ddd solid;
+                background: #fff;
+                border-radius: 3px;
+                margin-top: 18px;
                 .image_container {
+                  height: 328px;
+                  background: #eaeaea;
+                  border-radius: 2px 2px 0 0;
                   p {
 
                   }
                 }
                 .profile {
                   .content {
+                    width: 156px;
                     .sub {
+                      width: 32px;
                       p {
 
                       }
                     }
                     .main {
-                      p {
+                      width: 114px;
+                      p.name {
+                        font-size: 13px;
+                        line-height: 1.2;
+                        font-weight: bold;
                         span {
 
                         }
@@ -209,8 +229,9 @@
 
                         }
                       }
-                      p {
-
+                      p.text {
+                        font-size: 11px;
+                        line-height: 1.2;
                       }
                     }
                   }
@@ -235,6 +256,7 @@
 
 
   footer#gbl_footer {
+    clear: both;
     margin-top: 40px;
     padding: 52px 0 50px 0;
     background: #fff;
