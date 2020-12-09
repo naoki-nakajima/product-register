@@ -252,7 +252,7 @@
                   .btn_block {
                     width: 64px;
                     float: right;
-                    .btn_folow {
+                    .btn_follow {
 
                       p {
                         width: 64px;
@@ -269,12 +269,16 @@
           section#ranking {
             height: 479px;
             .title_container {
+              display: flex;
               h2.title {
                 font-size: 18px;
                 clear: both;
               }
               p.update {
-
+                display: inline-block;
+                font-size: 12px;
+                color : #888;
+                margin:6px 0 0 8px;
               }
             }
             ol {
@@ -283,7 +287,6 @@
               margin: -8px 0 0 -18px;
               li {
                 float: left;
-                width: 246px;
                 border: 1px #ddd solid;
                 background: #fff;
                 border-radius: 3px;
@@ -318,6 +321,7 @@
                     }
                     .main {
                       width: 114px;
+                      float: right;
                       p.name {
                         font-size: 13px;
                         line-height: 1.2;
@@ -347,6 +351,89 @@
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+          section#recommend {
+            h2.title {
+
+            }
+            ul.img_after_load {
+              width: 798px;
+              height: 406px;
+              margin: -8px 0 0 -18px;
+              li {
+                float: left;
+                width: 246px;
+                border: 1px #ddd solid;
+                background: #fff;
+                border-radius: 3px;
+                margin: 18px 0 0 18px;
+                .image_container {
+                  height: 328px;
+                  background: #eaeaea;
+                  border-radius: 2px 2px 0 0;
+                  p {
+
+                  }
+                }
+                .profile {
+                  padding: 10px;
+                  height: 38px;
+                  .content {
+                    width: 156px;
+                    float: left;
+                    padding-top: 2px;
+                    .sub {
+                      float: left;
+                      width: 32px;
+                      p {
+                        height: 32px;
+                        width: 32px;
+                        line-height: 1;
+                        background: #666;
+                      }
+                    }
+                    .main {
+                      float: right;
+                      width: 114px;
+                      p.name {
+                        font-size: 13px;
+                        line-height: 1.2;
+                        font-weight: bold;
+                        span {
+
+                        }
+                        span {
+
+                        }
+                      }
+                      p.txt {
+                        font-size: 11px;
+                        line-height: 1.2;
+                        margin-top: 3px;
+                      }
+                    }
+                  }
+                  .btn_block {
+                    width: 64px;
+                    float: right;
+                    .btn_follow {
+
+                      p {
+                        width: 64px;
+                        height: 38px;
+                        background: #ddd;
+                      }
+                    }
+                  }
+                }
+              }
+              li.large {
+                width: 379px;
+                .image_container {
+                  height: 506px;
                 }
               }
             }
