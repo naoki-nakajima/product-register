@@ -186,6 +186,7 @@
         display: flex;
         #sidebar {
           width: 180px;
+          margin-right: 25px;
           section#search {
             h2.title {
               font-size: 18px;
@@ -209,6 +210,7 @@
             margin-top: 28px;
             border-top: 1px #ddd solid;
             padding-top: 18px;
+            overflow: hidden;
             h2.title {
               font-size: 18px;
               color: #333;
@@ -273,7 +275,103 @@
             }
           }
           section#brand {
+            margin-top: 28px;
             clear: both;
+            border-top: 1px #ddd solid;
+            padding-top: 18px;
+            overflow: hidden;
+            h2.title {
+              font-size: 18px;
+              color: #333;
+              ol {
+                li {
+                  font-size: 13px;
+                  p.txt {
+                    color: #333;
+                    display: block;
+                    padding: 5px 6px 5px 0;
+                  }
+                }
+              }
+              p.btn_more {
+                width: 84px;
+                font-size: 11px;
+                margin-top: 8px;
+                float: right;
+                a.over {
+                  display: block;
+                  text-align: center;
+                  text-decoration: none;
+                  color: #888;
+                  font-weight: bold;
+                  border: 1px #ddd solid;
+                  border-radius: 2px;
+                  background: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+                  padding: 5px 0;
+                }
+              }
+            }
+          }
+          section#trend_keyword {
+            margin-top: 28px;
+            border-top: 1px #ddd solid;
+            padding-top: 18px;
+            overflow: hidden;
+            p.title {
+              font-size: 18px;
+              color: #333;
+            }
+            .img_after_load.data#keywords {
+              ul.link {
+                padding-top: 6px;
+                li {
+                  font-size: 13px;
+                  a {
+                    color: #333;
+                    display: block;
+                    padding: 5px 6px 5px 0;
+                  }
+                }
+              }
+            }
+          }
+          section#category {
+            margin-top: 28px;
+            border-top: 1px #ddd solid;
+            padding-top: 18px;
+            overflow: hidden;
+            h2.title {
+              font-size: 18px;
+              color: #333;
+            }
+            ul {
+              padding-top: 6px;
+              li {
+                font-size: 13px;
+                a {
+                  color: #333;
+                  display: block;
+                  padding: 5px 6px 5px 0;
+                }
+              }
+            }
+            p.btn_more {
+              width: 84px;
+              font-size: 11px;
+              margin-top: 8px;
+              float: right;
+              a.over {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: #888;
+                font-weight: bold;
+                border: 1px #ddd solid;
+                border-radius: 2px;
+                background: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+                padding: 5px 0;
+              }
+            }
           }
         }
         #content {
