@@ -10,14 +10,12 @@
     top: 0;
     left: 0;
     z-index: 100;
-    
     #gbl_header_bar {
       position: relative;
       z-index: 2;
       height: 54px;
       background: #fff;
       box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
-
       .container {
         position: relative;
         margin: 0 auto;
@@ -113,7 +111,7 @@
 
 
   article#gbl_main {
-    background: #f6f7f8;
+    background: hsl(210, 12%, 97%);
     width: 100%;
     padding-top: 54px;
     #select_sex_type {
@@ -183,6 +181,101 @@
       #content_container {
         width: 990px;
         margin: 30px auto 0 auto;
+        padding-bottom: 40px;
+        overflow: hidden; 
+        display: flex;
+        #sidebar {
+          width: 180px;
+          section#search {
+            h2.title {
+              font-size: 18px;
+              color: #333;
+              ul {
+                padding-top: 5px;
+                li {
+                  font-size: 13px;
+                  margin-top: 4px;
+                  a {
+                    display: block;
+                    padding: 5px 0;
+                    width: 156px;
+                    color: #333;
+                  }
+                }
+              }
+            }
+          }
+          section#user {
+            margin-top: 28px;
+            border-top: 1px #ddd solid;
+            padding-top: 18px;
+            h2.title {
+              font-size: 18px;
+              color: #333;
+            }
+            ol {
+              padding-bottom: 5px;
+              li {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 18px;
+                .sub {
+                  width: 36px;
+                  .img {
+                    width: 36px;
+                    height: 36px;
+                    background: #666;
+                    border-radius: 50%;
+                    border: 1px #ddd solid;
+                    a {
+
+                    }
+                  }
+                }
+                .main {
+                  width: 136px;
+                  padding-top: 2px;
+                  p.name {
+                    font-size: 12px;
+                    line-height: 1.2;
+                    font-weight: bold;
+                    span.namefirst {
+
+                    }
+                  }
+                  p.txt {
+                    font-size: 11px;
+                    line-height: 1.2;
+                    margin-top: 3px;
+                  }
+                }
+              }
+              li:first-child {
+                margin-top: 14px;
+              }
+            }
+            p.btn_more {
+              width: 84px;
+              font-size: 11px;
+              margin-top: 8px;
+              float: right;
+              a.over {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: #888;
+                font-weight: bold;
+                border: 1px #ddd solid;
+                border-radius: 2px;
+                background: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+                padding: 5px 0;
+              }
+            }
+          }
+          section#brand {
+            clear: both;
+          }
+        }
         #content {
           margin: 0 auto;
           width: 780px;
@@ -190,7 +283,6 @@
             height: 479px;
             h2.title{
               font-size: 18px;
-              clear: both;
             }
             ul.img_after_load {
               width: 798px;
@@ -449,7 +541,6 @@
 
   footer#gbl_footer {
     clear: both;
-    margin-top: 40px;
     padding: 52px 0 50px 0;
     background: #fff;
     width: 100%;
