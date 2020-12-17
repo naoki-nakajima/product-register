@@ -1,20 +1,36 @@
 .productNew
   .productNew__box
     .productNew__box__header
+      = render partial: "products/header"
     .productNew__box__main
-      .productNew__box__main__postImage
-        = form_with model: @product, local: true do |f|
-          = f.file_field :image, placeholder: "画像を5枚までアップロードできます", class: "productNewForm"
-          = f.submit "投稿する", class: "productNewFormBtn"
-      
+      .productNew__box__main__image
+        .productNew__box__main__image__title
+          投稿画像
+        .productNew__box__main__image__txt
+          5枚まで投稿できます。
+        .productNew__box__main__image__main
+          ここに画像のフォームを作る！！！
       .productNew__box__main__contents
-        .productNew__box__main__contents
-          .productNew__box__main__contents__content
-          aaa
-        .productNew__box__main__contents
-          .productNew__box__main__contents__content
-          aaa
-        .productNew__box__main__contents
-          .productNew__box__main__contents__content
-          aaa
-    
+        .productNew__box__main__contents__txt
+          .productNew__box__main__contents__txt__title
+            コーディネートのポイント
+          .productNew__box__main__contents__txt__sentence
+            ここにテキストフォームを作る
+        .productNew__box__main__contents__tag
+          .productNew__box__main__contents__tag__title
+            タグ
+          .productNew__box__main__contents__tag__sentense
+            ここにタグのフォームを作る
+        .productNew__box__main__info
+          .productNew__box__main__info__detail--title
+            モデル / 性別
+          .productNew__box__main__info__detail--heightAndSex
+            170cm / MEN  ここは身長と性別を変えられるようにする
+          .productNew__box__main__info__detail--height
+            身長 170cm > 編集できるようにする
+          .productNew__box__main__info__detail--sex
+            性別  MEN > 編集できるようにする
+          .productNew__box__main__info__detail--age
+            年齢  入力できるようにする
+    .productNew__box__footer
+      = render partial: "products/footer"
