@@ -1,0 +1,20 @@
+.productNew
+  .productNew__box
+    .productNew__box__header
+    .productNew__box__main
+      .productNew__box__main__postImage
+        = form_with model: @product, local: true do |f|
+          = f.file_field :image, placeholder: "画像を5枚までアップロードできます", class: "productNewForm"
+          = f.submit "投稿する", class: "productNewFormBtn"
+      
+      .productNew__box__main__contents
+        .productNew__box__main__contents
+          .productNew__box__main__contents__content
+          aaa
+        .productNew__box__main__contents
+          .productNew__box__main__contents__content
+          aaa
+        .productNew__box__main__contents
+          .productNew__box__main__contents__content
+          aaa
+    
