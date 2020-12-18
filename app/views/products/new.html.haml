@@ -8,29 +8,52 @@
           投稿画像
         .productNew__box__main__image__txt
           5枚まで投稿できます。
-        .productNew__box__main__image__main
+        .productNew__box__main__image__form
           ここに画像のフォームを作る！！！
       .productNew__box__main__contents
         .productNew__box__main__contents__txt
           .productNew__box__main__contents__txt__title
             コーディネートのポイント
-          .productNew__box__main__contents__txt__sentence
+          .productNew__box__main__contents__txt__sentense
             ここにテキストフォームを作る
         .productNew__box__main__contents__tag
           .productNew__box__main__contents__tag__title
             タグ
           .productNew__box__main__contents__tag__sentense
             ここにタグのフォームを作る
-        .productNew__box__main__info
-          .productNew__box__main__info__detail--title
-            モデル / 性別
-          .productNew__box__main__info__detail--heightAndSex
-            170cm / MEN  ここは身長と性別を変えられるようにする
-          .productNew__box__main__info__detail--height
-            身長 170cm > 編集できるようにする
-          .productNew__box__main__info__detail--sex
-            性別  MEN > 編集できるようにする
-          .productNew__box__main__info__detail--age
-            年齢  入力できるようにする
+      .productNew__box__main__info
+        %ul.productNew__box__main__info__title
+          %li.productNew__box__main__info__title__left
+            モデル情報
+          %li.productNew__box__main__info__title__right
+            🔼
+        %ul.productNew__box__main__info__heightAndSex
+          %li.productNew__box__main__info__heightAndSex__left
+            170cm /   
+          %li.productNew__box__main__info__heightAndSex__mid
+            MEN
+          %li.productNew__box__main__info__heightAndSex__right
+            >
+        %ul.productNew__box__main__info__height
+          %li.productNew__box__main__info__height__left
+            身長
+          %li.productNew__box__main__info__height__mid
+            170cm
+          %li.productNew__box__main__info__height__right
+            >
+        %ul.productNew__box__main__info__sex
+          %li.productNew__box__main__info__sex__left
+            性別  
+          %li.productNew__box__main__info__sex__mid
+            MEN
+          %li.productNew__box__main__info__sex__right
+            >
+        %ul.productNew__box__main__info__age
+          %li.productNew__box__main__info__age__left
+            年齢
+          %li.productNew__box__main__info__age__mid
+            30
+          %li.productNew__box__main__info__age__right
+            >
     .productNew__box__footer
       = render partial: "products/footer"
