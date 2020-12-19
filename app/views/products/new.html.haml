@@ -1,0 +1,62 @@
+.productNew
+  .productNew__box
+    .productNew__box__header
+      = render partial: "products/header"
+    = form_with model: @product, local:true do |f|
+      .productNew__box__main
+        .productNew__box__main__image
+          .productNew__box__main__image__title
+            投稿画像
+          .productNew__box__main__image__txt
+            5枚まで投稿できます。
+          .productNew__box__main__image__form
+            = f.file_field :image
+        .productNew__box__main__contents
+          .productNew__box__main__contents__txt
+            .productNew__box__main__contents__txt__title
+              コーディネートのポイント
+            .productNew__box__main__contents__txt__sentense
+              = f.text_area :text
+          .productNew__box__main__contents__tag
+            .productNew__box__main__contents__tag__title
+              タグ
+            .productNew__box__main__contents__tag__sentense
+              = f.text_area :tag
+        .productNew__box__main__info
+          %ul.productNew__box__main__info__title
+            %li.productNew__box__main__info__title__left
+              モデル情報
+            %li.productNew__box__main__info__title__right
+              🔼
+          %ul.productNew__box__main__info__heightAndSex
+            %li.productNew__box__main__info__heightAndSex__left
+              170cm /   
+            %li.productNew__box__main__info__heightAndSex__mid
+              MEN
+            %li.productNew__box__main__info__heightAndSex__right
+              >
+          %ul.productNew__box__main__info__height
+            %li.productNew__box__main__info__height__left
+              身長
+            %li.productNew__box__main__info__height__mid
+              170cm
+            %li.productNew__box__main__info__height__right
+              >
+          %ul.productNew__box__main__info__sex
+            %li.productNew__box__main__info__sex__left
+              性別  
+            %li.productNew__box__main__info__sex__mid
+              MEN
+            %li.productNew__box__main__info__sex__right
+              >
+          %ul.productNew__box__main__info__age
+            %li.productNew__box__main__info__age__left
+              年齢
+            %li.productNew__box__main__info__age__mid
+              30
+            %li.productNew__box__main__info__age__right
+              >
+        .productNew__box__main__submit
+          = f.submit id: "productNewForm" 
+      .productNew__box__footer
+      = render partial: "products/footer"

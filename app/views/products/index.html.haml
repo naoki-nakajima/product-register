@@ -1,27 +1,6 @@
 #container 
-  %header#gbl_header
-    #gbl_header_bar
-      .container
-        #hdr_sarch
-          コーディネートを探す
-          = link_to ""
-          -#検索フォームを実装する
-          %p.input
-            %span.icon_font
-
-        %h1.logo
-          FASHON
-        .no_login
-          %p.login
-            %i.far.fa-user
-              = link_to ""
-            %i.login ログイン
-            -#ログインボタンを作る
-          %p.regist
-            %i.over 
-              新規会員登録
-
-
+  = render partial: "products/header"
+  
   %article#gbl_main
     #select_sex_type
       %nav
@@ -61,17 +40,19 @@
             %h2.title
               ユーザー
             %ol
+              - @products.each do |product|
+                %li
+                  .sub
+                    .img
+                      = image_tag product.image.url if product.image.present?
+                      %a.over
+                  .main
+                    %p.name
+                      %span.namefirst
+                        name
+                    %p.txt
+                      777777
               %li
-                .sub
-                  .img
-                    %a.over
-                .main
-                  %p.name
-                    %span.namefirst
-                      name
-                  %p.txt
-                    777777
-              %li.clearfix
                 .sub
                   .img
                     %a.over
@@ -476,91 +457,4 @@
                     .btn_follow
                       %p.btn
         
-  %footer#gbl_footer
-    .container
-      #fInner
-        #fService
-          %ul.clearfix
-            %li
-              %a fashon
-            %li
-              %a fashonTown
-            %li
-              %a fashonShoes
-            %li
-              %a fashonUsed
-        #fContents
-          %ul.clerafix
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-          %ul.clerafix
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-            %li 
-              %a コーディネート一覧
-        #fHelp
-          %ul.clerafix
-            %li 
-              %a ヘルプ
-            %li 
-              %a ヘルプ
-            %li 
-              %a ヘルプ
-            %li 
-              %a ヘルプ
-            %li 
-              %a ヘルプ
-        #fMobile
-          %ul.clearfix
-            %li
-              %a アプリ
-            %li
-              %a アプリ
-            %li.sns.icon_twitter 
-              %a twitter
-            %li.sns.icon_twitter 
-              %a twitter
-            %li.sns.icon_twitter 
-              %a twitter
-            %li.sns.icon_twitter 
-              %a twitter
-      #fCorporate
-        %ul.clearfix
-          %li
-            %a コーポレイトサイト
-          %li
-            %a コーポレイトサイト
-          %li
-            %a コーポレイトサイト
-          %li
-            %a コーポレイトサイト
-          %li
-            %a コーポレイトサイト
-          %li
-            %a コーポレイトサイト
-        #language_switch
-          %p 日本語
-      #fCopyright.icon_font
-        #copy
-          %p COPYRIGHT ALL RIGHTS RESERVED BY NAOKINAKAJIMA
-          %p サイト内の文章、画像などの著作権はxxxに属します。複製、無断転写を禁止します。
-        
-      
+  = render partial: "products/footer"

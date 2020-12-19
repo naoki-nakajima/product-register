@@ -1,0 +1,395 @@
+/*----headerとfooterをパーシャルしてファイルを分けたがindex.scssが効かないので以下を記入---*/
+#gbl_header_bar {
+  position: relative;
+  z-index: 2;
+  height: 54px;
+  background: #fff;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+  .container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    height: 54px;
+    box-sizing: border-box;
+    
+    #hdr_sarch {
+      border-radius: 3px;
+      position: absolute;
+      left: -38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ddd;
+      background: #f5f5f5;
+      margin: 9px 15px 7px 36px;
+      font-size: 13px;
+      color: #666;
+      height: 34px;
+      width: 263px;
+      p {
+        span.icon_font {
+
+        }
+      }
+    }
+
+    h1.logo {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 150px;
+      height: 54px;
+      margin: 0 0 0 -75px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 54px;
+    }
+
+    .no_login { 
+      position: absolute;
+      right: 0;
+      top: 14px;
+      width: 300px;
+      text-align: right;
+      p.login {
+        display: flex;
+        display: inline-block;
+        font-size: 12px;
+        text-align: right;
+        border-right: #ddd solid 1px;
+        padding-right: 15px;
+        i.far.fa-user {
+          line-height: 26px;
+          text-align: center;
+          display: inline-block;
+          color: #fff;
+          height: 26px;
+          width: 26px;
+          background: #aaa;
+          border-radius: 3px;
+          font-size: 13px;
+          margin-right: 6px;
+          
+        }
+        i.login {
+          display: inline-block;
+          
+        }
+      }
+
+      p.regist {
+        display: inline-block;
+        font-size: 13px;
+        margin: 0 0 0 10px;
+        
+        i.over {
+          display: block;
+          color: #333;
+        }
+      }
+    }
+  }
+}
+/*----------------------------------/header-------------------------------------*/
+
+.productNew {
+  width: 100%;
+  background: #f1f1f1;
+  &__box {
+    &__main {
+      width: 700px;
+      margin: 0 auto;
+      background: #f9f9f9;
+      margin-bottom: 50px;
+      &__image {
+        width: 700px;
+        padding: 40px;
+        &__title {
+
+        }
+        &__txt {
+
+        }
+        &__form {
+
+        }
+      }
+
+    /*---------------------------------/main--------------------------------------------*/
+      &__contents {
+        width: 700px;
+        padding: 40px;
+        &__txt {
+          height: 200px;
+          &__title {
+  
+          }
+          &__sentense {
+            #product_text {
+              height: 100px;
+              width: 600px;
+            }
+          }
+        }
+         /*---------------------------------/txt--------------------------------------------*/
+        &__tag {
+          height: 200px;
+          &__title {
+
+          }
+          &__sentense {
+            #product_tag {
+              height: 100px;
+              width: 600px;
+            }
+          }
+        }
+        /*---------------------------------/tag--------------------------------------------*/
+      }
+      &__info {
+        border-bottom: #dddddd 1px solid;
+        ul.productNew__box__main__info__title {
+          display: flex;
+          height: 75px;
+          background: #f1f1f1;
+          align-items: flex-end;
+          padding: 0 15px;
+          padding-bottom: 10px;
+          li {
+          }
+          &__mid {
+            
+          }
+          &__right {
+            
+          }
+        }
+        /*---------------------------------/title--------------------------------------------*/
+        ul.productNew__box__main__info__heightAndSex {
+          display: flex;
+          height: 50px;
+          border-top: #dddddd 1px solid;
+          align-items: center;
+          padding: 0 15px;
+          li {
+
+          }
+          &__mid {
+
+          }
+          &__right {
+            
+          }
+        }
+        /*---------------------------------/heightAndSex--------------------------------------------*/
+        ul.productNew__box__main__info__height {
+          display: flex;
+          justify-content: space-between;
+          height: 50px;
+          border-top: #dddddd 1px solid;
+          align-items: center;
+          width: 670px;
+          margin: 0 auto;
+          li {
+
+          }
+          &__mid {
+            
+          }
+          &__right {
+            
+          }
+          li:first-child{
+            margin-right: auto;
+          }
+        }
+        /*---------------------------------/height--------------------------------------------*/
+        ul.productNew__box__main__info__sex {
+          display: flex;
+          justify-content: space-between;
+          height: 50px;
+          border-top: #dddddd 1px solid;
+          align-items: center;
+          width: 670px;
+          margin: 0 auto;
+          li {
+
+          }
+          &__mid {
+            
+          }
+          &__right {
+            
+          }
+          li:first-child{
+            margin-right: auto;
+          }
+        }
+        /*---------------------------------/sex--------------------------------------------*/
+        ul.productNew__box__main__info__age {
+          display: flex;
+          justify-content: space-between;
+          height: 50px;
+          border-top: #dddddd 1px solid;
+          align-items: center;
+          width: 670px;
+          margin: 0 auto;
+          li {
+
+          }
+          &__mid {
+            
+          }
+          &__right {
+            
+          }
+          li:first-child {
+            margin-right: auto;
+          }
+        }
+      }
+      &__submit {
+        width: 360px;
+        margin: 0 auto;
+        padding: 24px 0;
+        #productNewForm {
+          width: 360px;
+          min-height: 48px;
+        }
+      }
+    }
+  }
+}
+
+footer#gbl_footer {
+  clear: both;
+  padding: 52px 0 50px 0;
+  background: #fff;
+  width: 100%;
+  border-top: 1px #ddd solid;
+  .container {
+    width: 990px;
+    margin: 0 auto;
+    #fInner {
+      display: flex;
+      #fService{
+        width: 130px;
+        ul {
+          li {
+            font-size: 12px;
+            a {
+              display: inline-block;
+              padding: 2px 0px;;
+            }
+          }
+        }
+      }
+      #fContents {
+        width: 416px;
+        border-left: 1px #ddd solid;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        ul {
+          width: 162px;
+          li {
+            
+            font-size: 12px;
+            a {
+              display: inline-block;
+              padding: 2px 0;
+            }
+          }
+        }
+      }
+      #fHelp {
+        width: 264px;
+        border-left: 1px #ddd solid;
+        text-align: center;
+        ul {
+          li {
+            font-size: 12px;
+            a {
+              display: inline-block;
+              padding: 2px 0;
+            }
+          }
+        }
+        
+      }
+      #fMobile {
+        width: 180px;
+        border-left: 1px #ddd solid;
+        text-align: center;
+        ul {
+          li {
+            font-size: 12px;
+            a {
+              display: inline-block;
+              padding: 2px 0;
+            }
+          }
+        }
+      }
+    }
+    
+      #fCorporate {
+        padding: 0px;
+        margin-top: 20px;
+        border-top : 1px #ddd solid;
+        padding-top: 8px;
+        text-align: start;
+        position: relative;
+        ul {
+          margin-left: -16px;
+          li { 
+            display: inline-block;
+            font-size: 12px;
+            margin-left: 16px;
+            padding-right: 20px;
+            border-right: 1px #ddd solid;
+            a {
+              padding: 5px 0;
+              color: #666;
+            }
+          }
+          li:last-child{
+            border-right: none;
+          }
+        }
+        #language_switch {
+          position: absolute;
+          right: -8px;
+          top: 3px;
+          height: 30px;
+          width: 80px;
+          line-height: 30px;
+          margin-top: 2px;
+          margin-right: 8px;
+          p {
+            font-size: 14px;
+            color: #666;
+          }
+        }
+      }
+        
+    #fCopyright.icon_font {
+      border-top: 1px #ddd solid;
+      margin-top: 8px;
+      padding-top: 19px;
+      position: relative;
+      #copy {
+        p {
+          color: #666;
+          font-size: 11px;
+
+        }
+      }
+    }
+  }
+}
+
+/*-----------------------------------/footer--------------------------*/
