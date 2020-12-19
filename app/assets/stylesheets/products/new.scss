@@ -128,7 +128,10 @@
   
           }
           &__sentense {
-            height: 100px;
+            #product_text {
+              height: 100px;
+              width: 600px;
+            }
           }
         }
          /*---------------------------------/txt--------------------------------------------*/
@@ -138,7 +141,10 @@
 
           }
           &__sentense {
-            height: 100px;
+            #product_tag {
+              height: 100px;
+              width: 600px;
+            }
           }
         }
         /*---------------------------------/tag--------------------------------------------*/
@@ -243,6 +249,15 @@
           li:first-child {
             margin-right: auto;
           }
+        }
+      }
+      &__submit {
+        width: 360px;
+        margin: 0 auto;
+        padding: 24px 0;
+        #productNewForm {
+          width: 360px;
+          min-height: 48px;
         }
       }
     }
