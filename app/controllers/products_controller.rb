@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
   def new
     @user = current_user
     if user_signed_in?
-    @product = Product.new
+      @product = Product.new
     else
       redirect_to new_user_registration, info: "ログインしてください"
     end
@@ -20,6 +20,7 @@ class ProductsController < ApplicationController
     if @product.save
       redirect_to root_path, notice: "投稿しました"
     else
+      flash.now[:alert] = "未入力です"
       render :new
     end
   end
@@ -49,6 +50,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:image, :text)
+    params.require(:product).permit(:image, :text, :tag).merge(user_id: current_user.id)
   end
 end

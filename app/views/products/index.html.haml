@@ -40,18 +40,16 @@
             %h2.title
               ユーザー
             %ol
-              - @products.each do |product|
-                %li
-                  .sub
-                    .img
-                      = image_tag product.image.url if product.image.present?
-                      %a.over
-                  .main
-                    %p.name
-                      %span.namefirst
-                        name
-                    %p.txt
-                      777777
+              %li
+                .sub
+                  .img
+                    %a.over
+                .main
+                  %p.name
+                    %span.namefirst
+                      name
+                  %p.txt
+                    777777
               %li
                 .sub
                   .img
@@ -140,23 +138,25 @@
           %section.pickupTagList
             %h2.title＃オールブラック
             %ul.img_after_load
-              %li
-                .image_container
-                  %p
-                .profile
-                  .content
-                    .sub
-                      %p
-                    .main
-                      %p.name
-                        %span.namefirst
-                          name
-                        %span.icon_font
-                      %p.txt
-                        170cm
-                  .btn_block
-                    .btn_follow
-                      %p.btn
+              - @products.each do |product|
+                %li
+                  .image_container
+                    = image_tag product.image.url, size: "244x328" if product.image.present?
+                    %p
+                  .profile
+                    .content
+                      .sub
+                        %p
+                      .main
+                        %p.name
+                          %span.namefirst
+                            name
+                          %span.icon_font
+                        %p.txt
+                          170cm
+                    .btn_block
+                      .btn_follow
+                        %p.btn
               %li
                 .image_container
                   %p
