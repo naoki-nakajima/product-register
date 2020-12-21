@@ -19,10 +19,9 @@ ActiveRecord::Schema.define(version: 2020_12_12_122430) do
     t.string "image"
     t.string "text"
     t.string "tag"
-    t.bigint "user_id"
+    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_products_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -39,5 +38,4 @@ ActiveRecord::Schema.define(version: 2020_12_12_122430) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "products", "users"
 end

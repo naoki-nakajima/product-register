@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
    before_action :move_to_index
   
    def index
-    @products = Product.all.includes(:user).limit(3)
+    @products = Product.order("RANDOM()").includes(:user).limit(3)
     @user = current_user
   end
 

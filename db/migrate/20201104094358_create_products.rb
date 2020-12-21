@@ -4,7 +4,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :image
       t.string :text
       t.string :tag
-      t.references :user, foreign_key: true
+      t.integer :user_id, foreign_key: true, null: false
       t.timestamps
     end
   end
