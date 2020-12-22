@@ -1,0 +1,64 @@
+.productShow {
+    height: 100vh;
+    width: 100%;
+  &__title {
+    padding: 18px 0 30px 0;
+    background: #fff;
+    height: 133px;
+    border-bottom: 1px #ddd solid;
+    &__box {
+      width: 990px;
+      margin: 0 auto;
+      &__bread {
+        width: 790px;
+        ol {
+          li {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    &__userHeader {
+      padding: 12px 0;
+      width: 100%;
+      &__container {
+        width: 990px;
+        margin: 0 auto;
+        display: flex;
+        &__left {
+          width: 850px;
+          display: table;
+          display: flex;
+          &__avatar {
+            width: 48px;
+            height: 48px;
+            background: #111;
+            border-radius: 50%;
+          }
+          &__text {
+            &__name {
+  
+            }
+            &__info {
+              ul {
+                li {
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+        &__right {
+          .btn_follow {
+            p {
+  
+            }
+          }
+        }
+      }
+    }
+  }
+  &__body {
+
+  }
+}

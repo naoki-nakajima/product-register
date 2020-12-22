@@ -141,7 +141,7 @@
               - @products.each do |product|
                 %li
                   .image_container
-                    = image_tag product.image.url, size: "244x328" if product.image.present?
+                    = link_to (image_tag product.image.url, size: "244x328" if product.image.present?), product_path(product.id)
                     %p
                   .profile
                     .content
@@ -150,7 +150,7 @@
                       .main
                         %p.name
                           %span.namefirst
-                            name
+                            = product.user.name
                           %span.icon_font
                         %p.txt
                           170cm
