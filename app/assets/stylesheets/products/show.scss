@@ -1,6 +1,7 @@
 .productShow {
     height: 100vh;
     width: 100%;
+    overflow: scroll;
   &__title {
     padding: 18px 0 30px 0;
     background: #fff;
@@ -104,6 +105,49 @@
     }
   }
   &__body {
+    width: 990px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 20px;
+    &__left {
+      width: 558px;
+      &__cordinateImg {
+        height: 714px;
+        width: 556px;
+        background: #333;
+      }
+      &__action {
+        margin-top: 24px;
+        width: 556px;
+        height: 400px;
+        background: #999;
+        &__function {
+          &__left {
+            &__folderBtn {
+              &__btn {
 
+              }
+            }
+          }
+          &__right {
+            &__likeBtn {
+
+            }
+            &__commentBtn {
+
+            }
+          }
+        }
+        &__comment {
+
+        }
+      }
+    }
+    &__right {
+      width: 414px;
+      background: #444;
+    }
   }
 }
