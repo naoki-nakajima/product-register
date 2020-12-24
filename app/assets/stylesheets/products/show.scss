@@ -1,0 +1,153 @@
+.productShow {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+  &__title {
+    padding: 18px 0 30px 0;
+    background: #fff;
+    height: 133px;
+    border-bottom: 1px #ddd solid;
+    &__box {
+      width: 990px;
+      margin: 0 auto;
+      &__bread {
+        width: 790px;
+        ol {
+          li {
+            display: inline-block;
+            font-size: 13px;
+          }
+          li:before {
+            content: ">";
+            color: #aaa;
+            padding: 0 8px 0 6px;
+            font-size: 13px;
+          }
+          li:first-child:before {
+            content:  none;
+          }
+        }
+      }
+    }
+    &__userHeader {
+      padding-top: 24px;
+      width: 100%;
+      line-height: 20px;
+      &__container {
+        width: 990px;
+        margin: 0 auto;
+        display: flex;
+        
+        &__left {
+          width: 850px;
+          display: table;
+          display: flex;
+          &__avatar {
+            width: 48px;
+            height: 48px;
+            background: #111;
+            border-radius: 50%;
+          }
+          &__text {
+            padding-left: 10px;
+            &__name {
+              font-size: 20px;
+              padding-top: 1px;
+              width: 784px;
+            }
+            &__info {
+              ul {
+                padding-top: 4px;
+                li {
+                  font-size: 12px;
+                  margin-left: 8px;
+                  display: inline-block;
+                }
+                li:before {
+                  content: "";
+                  margin-right: 8px;
+                  height: 11px;
+                  width: 1px;
+                  background: #ddd;
+                  display: inline-block;
+                }
+                li:first-child {
+                  margin-left: 0px;
+                }
+                li:first-child:before {
+                  content: none;
+                }
+              }
+            }
+          }
+        }
+        &__right {
+          width: 134px;
+          padding-top: 8px;
+          .btn_follow {
+            p {
+              a {
+                display: block;
+                padding: 8px 0;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                border: 1px #1e78ad solid;
+                border-radius: 3px;
+                background: linear-gradient(to bottom, #2490d0 0%, #1f7eb6 100%);
+                padding-bottom: 10px;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__body {
+    width: 990px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 20px;
+    &__left {
+      width: 558px;
+      &__cordinateImg {
+        height: 714px;
+        width: 556px;
+        background: #333;
+      }
+      &__action {
+        margin-top: 24px;
+        width: 556px;
+        height: 400px;
+        background: #999;
+        &__function {
+          &__left {
+            &__folderBtn {
+              &__btn {
+
+              }
+            }
+          }
+          &__right {
+            &__likeBtn {
+
+            }
+            &__commentBtn {
+
+            }
+          }
+        }
+        &__comment {
+
+        }
+      }
+    }
+    &__right {
+      width: 414px;
+      background: #444;
+    }
+  }
+}
