@@ -38,5 +38,18 @@
             .productShow__body__left__action__function__right__commentBtn
               コメント
         .productShow__body__left__action__comment
+          .productShow__body__left__action__comment__container
+            %h3.title naokiさんへのコメント
+            %p.no_comment NO COMMENT
+        = form_with model: @product, local:true do |f|
+          .productShow__body__left__action__comment__postBox
+            .productShow__body__left__action__comment__postBox__left
+              %p.icon
+              .productShow__body__left__action__comment__postBox__left__text
+                = f.text_area :text
+            .productShow__body__left__action__comment__postBox__right
+              .productShow__body__left__action__comment__postBox__right__btn
+                = f.submit class: "produceShowCommentBtn"
+            
     .productShow__body__right
       
