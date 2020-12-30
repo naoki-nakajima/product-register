@@ -29,11 +29,39 @@
       .productShow__body__left__action
         .productShow__body__left__action__function
           .productShow__body__left__action__function__left
-            .productShow__body__left__action__function__folderBtn
-              .productShow__body__left__action__function__folderBtn__btn
+            .productShow__body__left__action__function__left__folderBtn
+              .productShow__body__left__action__function__left__folderBtn__btn
+                お気に入り
           .productShow__body__left__action__function__right
             .productShow__body__left__action__function__right__likeBtn
+              229
             .productShow__body__left__action__function__right__commentBtn
+              コメント
         .productShow__body__left__action__comment
+          .productShow__body__left__action__comment__container
+            %h3.title naokiさんへのコメント
+            %p.no_comment NO COMMENT
+        = form_with model: @product, local:true do |f|
+          .productShow__body__left__action__comment__postBox
+            .productShow__body__left__action__comment__postBox__left
+              %p.icon
+              .productShow__body__left__action__comment__postBox__left__text
+                = f.text_area :text, placeholder: "コメントを書く"
+            .productShow__body__left__action__comment__postBox__right
+              .productShow__body__left__action__comment__postBox__right__btn
+                = f.submit class: "produceShowCommentBtn", value: "送信"
+            
     .productShow__body__right
-      
+      .productShow__body__right__cordinateInfo
+        %h1 naokiのスウェットを使ったコーディネート
+        %p.model_info
+          モデル情報: 175cm / MEN
+        %p.content_text
+          白シャツ
+          %br/
+          %br/
+          デートにぴったり
+        .metaData
+          .metaData__upDate
+            2020/12/31 00:00:00
+        
