@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-   before_action :move_to_index
+   #before_action :move_to_index
   
    def index
     @products = Product.order("RANDOM()").includes(:user).limit(3)
@@ -46,9 +46,10 @@ class ProductsController < ApplicationController
 
   private
 
-  def move_to_index
-    redirect_to root_path unless user_signed_in?
-  end
+  #def move_to_index
+  #  redirect_to root_path unless user_signed_in?
+  #end
+
 
   def product_params
     params.require(:product).permit(:image, :text, :tag).merge(user_id: current_user.id)
