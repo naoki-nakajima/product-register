@@ -26,6 +26,7 @@
   .productShow__body
     .productShow__body__left
       .productShow__body__left__cordinateImg
+        = link_to image_tag @product.image.url, size: "556x714"
       .productShow__body__left__action
         .productShow__body__left__action__function
           .productShow__body__left__action__function__left
@@ -64,4 +65,121 @@
         .metaData
           .metaData__upDate
             2020/12/31 00:00:00
-        
+      .productShow__body__right__cordinateItem
+        %h2.tit 着用アイテム (2)
+        %ul
+          %li.itemList
+            .left
+              %p.img
+            .right
+              %p.brand
+                ジルサンダー
+              %p.txt
+                %a パンツ(ホワイト系)
+              %p.txt サイズ:XL
+              %p.count
+                %a 着用コーデ:20件
+          %li.itemList
+            .left
+              %p.img
+            .right
+              %p.brand
+                エルメス
+              %p.txt
+                %a デニムパンツ(ブラック系)
+              %p.txt サイズ:X-SMALL
+              %p.count
+                %a 着用コーデ:7件
+      .productShow__body__right__cordinateTag
+        %section.tag
+          %h3  着用タグからコーディネートを探す
+          %ul
+            %li 
+              %a #aaa
+            %li 
+              %a #bbbb
+            %li 
+              %a #ccccc
+            %li 
+              %a #dddddd
+            %li 
+              %a #eeeeeee
+            %li 
+              %a #ffffffff
+            %li 
+              %a #ggggggggg
+            %li 
+              %a #hhhhhhhhhh
+            %li 
+              %a #iiiiiiiiiii
+            %li 
+              %a #jjjjjjjjjjjj
+        %section.useBrand
+          %h3  着用ブランドからコーディネートを探す
+          %ul
+            %li 
+              %a #aaa
+            %li 
+              %a #bbbb
+            %li 
+              %a #ccccc
+            %li 
+              %a #dddddd
+            %li 
+              %a #eeeeeee
+            %li 
+              %a #ffffffff
+            %li 
+              %a #ggggggggg
+            %li 
+              %a #hhhhhhhhhh
+            %li 
+              %a #iiiiiiiiiii
+            %li 
+              %a #jjjjjjjjjjjj
+        %section.favoriteBrand
+          %h3  naokiがよく着用するブランド
+          %ul
+            %li 
+              %a #aaa
+            %li 
+              %a #bbbb
+            %li 
+              %a #ccccc
+            %li 
+              %a #dddddd
+            %li 
+              %a #eeeeeee
+            %li 
+              %a #ffffffff
+            %li 
+              %a #ggggggggg
+            %li 
+              %a #hhhhhhhhhh
+            %li 
+              %a #iiiiiiiiiii
+            %li 
+              %a #jjjjjjjjjjjj
+        %section.kindItem
+          %h3  似ているアイテムを使ったコーディネートを探す
+          %ul
+            %li 
+              %a #aaa
+            %li 
+              %a #bbbb
+            %li 
+              %a #ccccc
+            %li 
+              %a #dddddd
+            %li 
+              %a #eeeeeee
+            %li 
+              %a #ffffffff
+            %li 
+              %a #ggggggggg
+            %li 
+              %a #hhhhhhhhhh
+            %li 
+              %a #iiiiiiiiiii
+            %li 
+              %a #jjjjjjjjjjjj
