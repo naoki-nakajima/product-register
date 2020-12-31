@@ -107,7 +107,6 @@
   }
   &__body {
     width: 990px;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -444,5 +443,10 @@
         }
       }
     }
+  }
+  &__footer {
+    height: 300px;
+    background: #eee;
+    clear: both;
   }
 }
