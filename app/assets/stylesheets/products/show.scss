@@ -3,6 +3,13 @@
     width: 100%;
     background: #f6f7f8;
     overflow: scroll;
+    #gbl_header_bar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
   &__title {
     padding: 18px 0 30px 0;
     background: #fff;
