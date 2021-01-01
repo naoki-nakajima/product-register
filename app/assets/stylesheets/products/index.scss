@@ -71,6 +71,7 @@
           right: 0;
           top: 14px;
           text-align: right;
+          width: 90px;
           p.login {
             display: flex;
             display: inline-block;
@@ -108,8 +109,10 @@
             }
           }
           ul.dropmenu {
+            position: absolute;
+            top: 40px;
+            right: 0px;
             width: 173px;
-            border: 1px #ddd solid;
             background: #fff;
             text-align: start;
             box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
