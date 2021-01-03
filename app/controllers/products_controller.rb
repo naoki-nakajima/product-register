@@ -33,6 +33,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    @tags = @product.tag_counts_on(:tags)
   end
 
   def destroy
@@ -52,6 +53,6 @@ class ProductsController < ApplicationController
 
 
   def product_params
-    params.require(:product).permit(:image, :text, :tag).merge(user_id: current_user.id)
+    params.require(:product).permit(:image, :text, :tag_list).merge(user_id: current_user.id)
   end
 end

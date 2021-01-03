@@ -3,7 +3,6 @@ class CreateProducts < ActiveRecord::Migration[5.2]
     create_table :products do |t|
       t.string :image
       t.string :text
-      t.string :tag
       t.integer :user_id, foreign_key: true, null: false
       t.timestamps
     end
