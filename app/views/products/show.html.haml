@@ -95,26 +95,9 @@
         %section.tag
           %h3  着用タグからコーディネートを探す
           %ul
+          - @tags.each do |tag|
             %li 
-              %a #aaa
-            %li 
-              %a #bbbb
-            %li 
-              %a #ccccc
-            %li 
-              %a #dddddd
-            %li 
-              %a #eeeeeee
-            %li 
-              %a #ffffffff
-            %li 
-              %a #ggggggggg
-            %li 
-              %a #hhhhhhhhhh
-            %li 
-              %a #iiiiiiiiiii
-            %li 
-              %a #jjjjjjjjjjjj
+              = link_to "##{tag.name}(#{tag.taggings_count})"
         %section.useBrand
           %h3  着用ブランドからコーディネートを探す
           %ul
