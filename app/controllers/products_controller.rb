@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
     if user_signed_in?
       @product = Product.new
     else
-      redirect_to new_user_registration, info: "ログインしてください"
+      redirect_to new_user_registration_path, info: "ログインしてください"
     end
   end
 
