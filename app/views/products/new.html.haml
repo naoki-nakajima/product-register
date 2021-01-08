@@ -16,7 +16,17 @@
             .productNew__box__main__contents__txt__title
               コーディネートのポイント
             .productNew__box__main__contents__txt__sentense
-              = f.text_area :text
+              = f.text_area :text, class: "cordinateSentense"
+          .productNew__box__main__contents__brand
+            .productNew__box__main__contents__brand__title
+              ブランド
+            .productNew__box__main__contents__brand__sentense
+              = f.text_area :text, class: "brandSentense"
+          .productNew__box__main__contents__color
+            .productNew__box__main__contents__color__title
+              カラー
+            .productNew__box__main__contents__color__sentense
+              = f.text_area :text, class: "colorSentense"
           .productNew__box__main__contents__tag
             .productNew__box__main__contents__tag__title
               タグ

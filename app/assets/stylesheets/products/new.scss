@@ -168,27 +168,50 @@
         width: 700px;
         padding: 40px;
         &__txt {
-          height: 200px;
           &__title {
   
           }
           &__sentense {
-            #product_text {
+            padding-bottom: 24px;
+            .cordinateSentense {
               height: 100px;
+              width: 600px;
+            }
+          }
+        }
+        &__brand {
+          &__title {
+
+          }
+          &__sentense {
+            padding-bottom: 24px;
+            .brandSentense {
+              width: 600px;
+            }
+          }
+        }
+        &__color {
+          &__title {
+
+          }
+          &__sentense {
+            padding-bottom: 24px;
+            .colorSentense {
               width: 600px;
             }
           }
         }
          /*---------------------------------/txt--------------------------------------------*/
         &__tag {
-          height: 200px;
           &__title {
 
           }
           &__sentense {
-            #product_tag {
-              height: 100px;
+            padding-bottom: 24px;
+            ul {
+              background: #fff;
               width: 600px;
+              border: 1px black solid;
             }
           }
         }
