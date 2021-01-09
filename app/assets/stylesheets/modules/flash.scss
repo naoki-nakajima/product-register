@@ -1,4 +1,7 @@
 .notification {
+  position: absolute;
+  top: 0px;
+  z-index: 10000;
   .notice {
     background-color: $light_blue;
     color: $white;

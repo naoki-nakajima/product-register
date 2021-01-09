@@ -17,7 +17,8 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to root_path, notice: "投稿しました"
+      flash[:notice] = "投稿しました"
+      redirect_to root_path
     else
       flash.now[:alert] = "未入力です"
       render :new
