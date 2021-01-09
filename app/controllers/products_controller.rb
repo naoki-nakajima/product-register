@@ -3,7 +3,6 @@ class ProductsController < ApplicationController
   
    def index
     @products = Product.order("RANDOM()").includes(:user).limit(3)
-    @user = current_user
   end
 
   def new
@@ -26,9 +25,13 @@ class ProductsController < ApplicationController
   end
 
   def edit
+    @product = Product.find(params[:id])
   end
 
   def update
+    product = product.find(params[:id])
+    if product.update(product_params)
+      redirect_to 
   end
 
   def show
