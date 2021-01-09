@@ -29,9 +29,13 @@ class ProductsController < ApplicationController
   end
 
   def update
-    product = product.find(params[:id])
+    product = Product.find(params[:id])
     if product.update(product_params)
-      redirect_to 
+      redirect_to product_path, notice: "更新が完了しました"
+    else
+      flash.now[:alert] = "未入力です"
+      render :edit
+    end
   end
 
   def show
