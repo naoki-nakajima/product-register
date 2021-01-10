@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to root_path
+      redirect_to product_path(@product.id), notice: "投稿しました"
     else
       flash.now[:alert] = "未入力です"
       render :new
@@ -46,7 +46,7 @@ class ProductsController < ApplicationController
   def destroy
     product = Product.find(params[:id])
     if product.destroy
-      redirect_to root_path
+      redirect_to root_path, notice: "削除しました"
     else
       f last.now[:danger] = "削除できませんでした"
       redirect_to root_path
