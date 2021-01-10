@@ -32,7 +32,7 @@
             %li
               = link_to "編集", edit_product_path, method: :get
             %li
-              = link_to "削除", product_path, method: :delete
+              = link_to "削除", product_path, method: :delete, data: {confirm: "削除しますか？"}
       .productShow__body__left__cordinateImg
         = image_tag @product.image.url, size: "556x714"
       .productShow__body__left__action
