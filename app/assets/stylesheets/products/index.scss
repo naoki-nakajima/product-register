@@ -175,12 +175,22 @@
         ul {
           text-align: center;
           li {
-            width: 160px;
             display: inline-block;
-            font-size: 17px;
-            text-align: center;
-            line-height: 46px;
-            color: #888;
+            a {
+              width: 160px;
+              height: 44px;
+              display: block;
+              font-size: 17px;
+              text-align: center;
+              line-height: 46px;
+              text-decoration: none;
+              color: #888;
+              padding-top: 1px;
+              &:hover {
+                background: #888;
+                color: white;
+              }
+            }
           }
         }
       }
