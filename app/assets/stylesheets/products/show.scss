@@ -255,6 +255,38 @@
     padding: 20px 0 20px 0;
     &__left {
       width: 558px;
+      position: relative;
+      &__more {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        ul {
+          display: none;
+          li {
+            padding-bottom: 1px;
+            a {
+              display:inline-block;
+              height: 40px;
+              width: 100px;
+              color: black;
+              text-align: center;
+              line-height: 40px;
+              text-decoration: none;
+              background: #fff;
+              border-radius: 3px;
+              border: 1px solid #ddd;
+              font-size: 12px;
+              &:hover {
+                background: linear-gradient(to bottom, #2490d0 0%, #1f7eb6 100%);
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      &:hover ul {
+        display: block;
+    }
       &__cordinateImg {
         height: 714px;
         width: 556px;

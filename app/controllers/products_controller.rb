@@ -3,7 +3,6 @@ class ProductsController < ApplicationController
   
    def index
     @products = Product.order("RANDOM()").includes(:user).limit(3)
-    @user = current_user
   end
 
   def new
@@ -18,7 +17,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to root_path, notice: "投稿しました"
+      redirect_to product_path(@product.id), notice: "投稿しました"
     else
       flash.now[:alert] = "未入力です"
       render :new
@@ -26,9 +25,17 @@ class ProductsController < ApplicationController
   end
 
   def edit
+    @product = Product.find(params[:id])
   end
 
   def update
+    product = Product.find(params[:id])
+    if product.update(product_params)
+      redirect_to product_path, notice: "更新が完了しました"
+    else
+      flash.now[:alert] = "未入力です"
+      render :edit
+    end
   end
 
   def show
@@ -37,7 +44,8 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    if @product.destroy
+    product = Product.find(params[:id])
+    if product.destroy
       redirect_to root_path, notice: "削除しました"
     else
       f last.now[:danger] = "削除できませんでした"
