@@ -31,7 +31,7 @@
             .productNew__box__main__contents__tag__title
               タグ
             .productNew__box__main__contents__tag__sentense
-              = f.text_field :tag_list, value: @product.tag_list.join(','), id: "myTags"
+              = f.text_field :tag_list, value: @product.tag_list, id: "myTags"
         .productNew__box__main__info
           %ul.productNew__box__main__info__title
             %li.productNew__box__main__info__title__left
