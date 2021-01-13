@@ -40,7 +40,7 @@
           .productShow__body__left__action__function__left
             .productShow__body__left__action__function__left__folderBtn
               .productShow__body__left__action__function__left__folderBtn__btn
-                お気に入り
+                = render partial: 'likes/like', locals: { product: @product, products: @products, likes: @likes, like: @like}
           .productShow__body__left__action__function__right
             .productShow__body__left__action__function__right__likeBtn
               229
