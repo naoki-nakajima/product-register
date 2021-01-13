@@ -175,12 +175,22 @@
         ul {
           text-align: center;
           li {
-            width: 160px;
             display: inline-block;
-            font-size: 17px;
-            text-align: center;
-            line-height: 46px;
-            color: #888;
+            a {
+              width: 160px;
+              height: 44px;
+              display: block;
+              font-size: 17px;
+              text-align: center;
+              line-height: 46px;
+              text-decoration: none;
+              color: #888;
+              padding-top: 1px;
+              &:hover {
+                background: #888;
+                color: white;
+              }
+            }
           }
         }
       }
@@ -212,17 +222,16 @@
               border-radius: 0 7px 7px 0;
               line-height: 32px;
               padding: 1px 0 0 0;
+              &:hover {
+                background: #333;
+              color: #fff;
+              }
             }
           }
           .current {
-            color: #fff;
             a {
-              display: block;
               border-radius: 7px 0 0 7px;
               border-right: none;
-              line-height: 32px;
-              background: #333;
-              color: #fff;
             }
           }
         }
@@ -446,14 +455,9 @@
                   height: 328px;
                   background: #eaeaea;
                   border-radius: 2px 2px 0 0;
-                  p {
-                    width: 100px;
-                    height: 200px;
-                  }
                 }
                 .profile {
                   padding: 10px;
-                  height: 38px;
                   .content {
                     width: 156px;
                     float: left;
@@ -462,10 +466,12 @@
                       float: left;
                       width: 32px;
                       p {
-                        height: 32px;
-                        width: 32px;
+                        height: 36px;
+                        width: 36px;
                         line-height: 1;
                         background: #666;
+                        border-radius: 50%;
+                        border: 1px #ddd solid;
                       }
                     }
                     .main {
@@ -491,13 +497,23 @@
                   }
                   .btn_block {
                     width: 64px;
+                    padding-bottom: 10px;
                     float: right;
                     .btn_follow {
-
-                      p {
+                      text-align: center;
+                      
+                      .btn {
                         width: 64px;
                         height: 38px;
-                        background: #ddd;
+                        font-size: 11px;
+                        line-height: 36px;
+                        border: 1px #ddd solid;
+                        border-radius: 2px;
+                        background: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+                        a {
+                          text-decoration: none;
+                          color: #888;
+                        }
                       }
                     }
                   }
@@ -557,6 +573,9 @@
                         width: 32px;
                         line-height: 1;
                         background: #666;
+                        display: block;
+                        border-radius: 50%;
+                        border: 1px #ddd solid;
                       }
                     }
                     .main {
@@ -628,11 +647,15 @@
                     .sub {
                       float: left;
                       width: 32px;
+                      
                       p {
                         height: 32px;
                         width: 32px;
                         line-height: 1;
                         background: #666;
+                        display: block;
+                        border-radius: 50%;
+                        border: 1px #ddd solid;
                       }
                     }
                     .main {

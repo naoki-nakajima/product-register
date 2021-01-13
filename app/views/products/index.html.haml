@@ -5,13 +5,13 @@
       %nav
         %ul
           %li.allcurrent
-            ALL
+            = link_to "ALL"
           %li.men
-            MEN
+            = link_to "MEN"
           %li.women
-            WOMEN
+            = link_to "WOMEN"
           %li.kids
-            KIDS
+            = link_to "KIDS"
     #gbl_body
       %nav#switch_menu
         %ul
@@ -141,7 +141,6 @@
                 %li
                   .image_container
                     = link_to (image_tag product.image.url, size: "244x328" if product.image.present?), product_path(product.id)
-                    %p
                   .profile
                     .content
                       .sub
@@ -155,7 +154,8 @@
                           170cm
                     .btn_block
                       .btn_follow
-                        %p.btn
+                        .btn
+                          = link_to "もっと見る"
           -#フリースセクション         
           %section.pickupTagList
             %h2.title＃フリース

@@ -99,9 +99,9 @@
         %section.tag
           %h3  着用タグからコーディネートを探す
           %ul
-          - @tags.each do |tag|
-            %li 
-              = link_to "##{tag.name}"
+            - @tags.each do |tag|
+              %li 
+                = link_to "#{tag.name}"
         %section.useBrand
           %h3  着用ブランドからコーディネートを探す
           %ul
