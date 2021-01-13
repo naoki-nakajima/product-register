@@ -41,6 +41,8 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     @tags = @product.tag_counts_on(:tags)
+    @comment = Comment.new
+    @comments = @product.comments.includes(:user)
   end
 
   def destroy
