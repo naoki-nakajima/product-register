@@ -305,9 +305,6 @@
           &__left {
             width: 208px;
             &__folderBtn {
-              height: 42px;
-              
-              color: #888;
               &__btn {
                 border: 1px #ddd solid;
                 text-align: center;
@@ -316,6 +313,19 @@
                 font-weight: bold;
                 border-radius: 3px 0 0 3px;
                 background: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+                .dislike__btn {
+                  a#dislikeBtn {
+                    text-decoration: none;
+                    color: red;
+                    .like__btn {
+                      a#likeBtn {
+                        text-decoration: none;
+                        color: black;
+                      }
+                    }
+                  }
+                }
+                
               }
             }
           }
