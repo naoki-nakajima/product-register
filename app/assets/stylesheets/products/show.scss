@@ -402,6 +402,18 @@
                 }
               }
             }
+            &__noText {
+              margin: 0 auto;
+              padding-top: 5px;
+              #commentLogin {
+                text-decoration: none;
+                color: blue;
+              }
+              #commentNewRegister {
+                text-decoration: none;
+                color: blue;
+              }
+            }
             &__right {
               &__btn {
                 .produceShowCommentBtn {
