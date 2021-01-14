@@ -317,15 +317,14 @@
                   a#dislikeBtn {
                     text-decoration: none;
                     color: red;
-                    .like__btn {
-                      a#likeBtn {
-                        text-decoration: none;
-                        color: black;
-                      }
-                    }
                   }
                 }
-                
+                .like__btn {
+                  a#likeBtn {
+                    text-decoration: none;
+                    color: black;
+                  }
+                }
               }
             }
           }
