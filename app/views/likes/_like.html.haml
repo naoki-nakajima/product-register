@@ -1,0 +1,22 @@
+- if user_signed_in?
+  -#ログインしているユーザーがすでに「いいね」しているかどうか
+  - if product.like_user(current_user.id)
+    .dislike__btn
+      = link_to product_like_path(current_user, like, product_id: @product.id), id: "dislikeBtn", method: "DELETE", remote: true do
+        %i.fas.fa-heart
+        %span いいね！
+        %span 
+          = product.likes_count
+  - else
+    .like__btn
+      = link_to product_likes_path(product), id: "likeBtn",method: "POST", remote: true do
+        %i.fas.fa-heart
+        %span いいね！
+        %span
+          = product.likes_count
+- else
+  .dislike__btn
+    %i.fas.fa-heart
+      %span いいね！
+      %span 
+        = product.likes_count
