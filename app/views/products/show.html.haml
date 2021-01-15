@@ -50,6 +50,28 @@
           .productShow__body__left__action__comment__container
             %h3.title naokiさんへのコメント
             %p.no_comment NO COMMENT
+            .comment_container
+              .date_container
+                %p.date 2021/1/16(土)
+              %ul.replay_container
+                %li.guest_replay
+                  .left
+                    %p
+                  .right
+                    .name
+                      %span.nickname
+                        直樹
+                      %span.userid
+                        @naokidayo
+                    .box
+                      .txt_box
+                        テストテストテストテストテストテストテストテストテストテスト
+                      .meta
+                        %p.replay
+                          返信する
+                        %p.time
+                          2021/12/12
+                %li.self_replay
         - if current_user
           = form_with model: [@product, @comment], local: true do |f|
             .productShow__body__left__action__comment__postBox
