@@ -1,7 +1,6 @@
 class CommentsController < ApplicationController
   def create
     Comment.create(comment_params)
-    redirect_to product_comments
   end
 
   private
