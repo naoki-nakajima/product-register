@@ -433,14 +433,6 @@
                         border: 1px #ddd solid;
                         background: #f6f7f8;
                       }
-                      .txt_box::before{
-                        content: "";
-  position: absolute;
-  top: 100%;
-  left: 20%;
-  border: 15px solid transparent;
-  border-top: 15px solid #1a62bc;
-                      }
                       .meta {
                         display: table-cell;
                         vertical-align: bottom;
@@ -461,7 +453,67 @@
                   }
                 }
                 li.self_replay {
-
+                  margin-top: 18px;
+                  display: flex;
+                  justify-content: space-between;
+                  .left {
+                    padding-top: 3px;
+                    width: 455px;
+                    text-align: left;
+                    .name {
+                      line-height: 1.4;
+                      color: #333;
+                      padding-left: 340px;
+                      span.nickname {
+                        font-size: 14px;
+                      }
+                      span.userid {
+                        margin: 0 0 0 7px;
+                        font-size: 11px;
+                        color: #888;
+                      }
+                    }
+                    .box {
+                      display: table;
+                      margin: 5px 0 0 0;
+                      .meta {
+                        display: table-cell;
+                        vertical-align: bottom;
+                        width: 88px;
+                        padding: 0 0 0 8px;
+                        p.replay {
+                          font-size: 12px;
+                          color: #888;
+                        }
+                        p.time {
+                          margin: 5px 0 1px 3px;
+                          font-size: 11px;
+                          line-height: 1.2;
+                          color: #555;
+                        }
+                      }
+                      .txt_box {
+                        position: relative;
+                        display: table-cell;
+                        vertical-align: top;
+                        max-width: 362px;
+                        font-size: 13px;
+                        padding: 8px 15px 8px 15px;
+                        border-radius: 0 6px 6px 6px;
+                        border: 1px #ddd solid;
+                        background: #f6f7f8;
+                      }
+                    }
+                  }
+                  .right {
+                    p {
+                      height: 40px;
+                      width: 40px;
+                      background: red;
+                      border-radius: 50%;
+                    }
+                    
+                  }
                 }
               }
             }
@@ -496,6 +548,7 @@
             &__noText {
               margin: 0 auto;
               padding-top: 5px;
+              padding-bottom: 15px;
               #commentLogin {
                 text-decoration: none;
                 color: blue;

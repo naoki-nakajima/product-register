@@ -72,6 +72,56 @@
                         %p.time
                           2021/12/12
                 %li.self_replay
+                  .left
+                    .name
+                      %span.nickname
+                        直樹
+                      %span.userid
+                        @naokidayo
+                    .box
+                      .meta
+                        %p.replay
+                          返信する
+                        %p.time
+                          2021/12/12
+                      .txt_box
+                        テストテストテストテストテストテストテストテストテストテスト
+                  .right
+                    %p
+                %li.guest_replay
+                  .left
+                    %p
+                  .right
+                    .name
+                      %span.nickname
+                        直樹
+                      %span.userid
+                        @naokidayo
+                    .box
+                      .txt_box
+                        テストテストテストテストテストテストテストテストテストテスト
+                      .meta
+                        %p.replay
+                          返信する
+                        %p.time
+                          2021/12/12
+                %li.self_replay
+                  .left
+                    .name
+                      %span.nickname
+                        直樹
+                      %span.userid
+                        @naokidayo
+                    .box
+                      .meta
+                        %p.replay
+                          返信する
+                        %p.time
+                          2021/12/12
+                      .txt_box
+                        テストテストテストテストテストテストテストテストテストテスト
+                  .right
+                    %p
         - if current_user
           = form_with model: [@product, @comment], local: true do |f|
             .productShow__body__left__action__comment__postBox
