@@ -453,12 +453,12 @@
                   justify-content: space-between;
                   .left {
                     padding-top: 3px;
-                    width: 455px;
+                    width: 460px;
                     text-align: left;
                     .name {
                       line-height: 1.4;
                       color: #333;
-                      padding-left: 340px;
+                      text-align: right;
                       span.nickname {
                         font-size: 14px;
                       }
@@ -471,11 +471,13 @@
                     .box {
                       display: table;
                       margin: 5px 0 0 0;
+                      text-align: right;
+                      float: right;
                       .meta {
                         display: table-cell;
                         vertical-align: bottom;
                         width: 88px;
-                        padding: 0 0 0 8px;
+                        padding: 0 10px 0 8px;
                         p.replay {
                           font-size: 12px;
                           color: #888;
@@ -497,6 +499,7 @@
                         border-radius: 6px 0 6px 6px;
                         border: 1px #ddd solid;
                         background: #f6f7f8;
+                        text-align: left;
                       }
                     }
                   }
