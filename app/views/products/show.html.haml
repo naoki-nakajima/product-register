@@ -52,48 +52,51 @@
               = @product.user.name 
               さんへのコメント
             .comment_container
-              - if @comments
-                - @comments.each do |comment|
-                  .date_container
-                    %p.date 2021/1/16(土)
-                  %ul.replay_container
-                    %li.guest_replay
-                      .left
-                        %p
-                      .right
-                        .name
-                          %span.nickname
-                            = link_to comment.user.name
-                          %span.userid
-                            @naokidayo
-                        .box
-                          .txt_box
-                            = comment.text
-                          .meta
-                            %p.replay
-                              返信する
-                            %p.time
-                              = comment.created_at.strftime('%Y/%m/%d %H:%M:%S')
-                    %li.self_replay
-                      .left
-                        .name
-                          %span.nickname
-                            = @product.user.name
-                          %span.userid
-                            @naokidayo
-                        .box
-                          .meta
-                            %p.replay
-                              返信する
-                            %p.time
-                              2021/12/12
-                          .txt_box
-                            = comment.text
-                      .right
-                        %p
-              - else
-                %p.no_comment
-                  NO COMMENT
+              .date_container
+                - if @comments
+                  - @comments.each do |comment|
+                    %p.date 
+                      = comment.created_at.strftime("%Y/%m/%d")
+                - if @comments
+                  - @comments.each do |comment|
+                    %ul.replay_container
+                      %li.guest_replay
+                        .left
+                          %p
+                        .right
+                          .name
+                            %span.nickname
+                              = link_to comment.user.name
+                            %span.userid
+                              @naokidayo
+                          .box
+                            .txt_box
+                              = comment.text
+                            .meta
+                              %p.replay
+                                返信する
+                              %p.time
+                                = comment.created_at.strftime("%Y/%m/%d %H:%M:%S")
+                      %li.self_replay
+                        .left
+                          .name
+                            %span.nickname
+                              = @product.user.name
+                            %span.userid
+                              @naokidayo
+                          .box
+                            .meta
+                              %p.replay
+                                返信する
+                              %p.time
+                                2021/12/12
+                            .txt_box
+                              = comment.text
+                        .right
+                          %p
+                - else
+                  %p.no_comment
+                    NO COMMENT
         - if current_user
           = form_with model: [@product, @comment], local: true do |f|
             .productShow__body__left__action__comment__postBox
