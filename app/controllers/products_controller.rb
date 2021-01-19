@@ -43,6 +43,7 @@ class ProductsController < ApplicationController
     @tags = @product.tag_counts_on(:tags)
     @comment = Comment.new
     @comments = @product.comments.includes(:user)
+    
   end
 
   def destroy
