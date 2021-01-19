@@ -294,7 +294,6 @@
       &__action {
         padding-top: 24px;
         width: 556px;
-        height: 377px;
         border: 1px #ddd solid;
         background: #fff;
         &__function {
@@ -317,15 +316,14 @@
                   a#dislikeBtn {
                     text-decoration: none;
                     color: red;
-                    .like__btn {
-                      a#likeBtn {
-                        text-decoration: none;
-                        color: black;
-                      }
-                    }
                   }
                 }
-                
+                .like__btn {
+                  a#likeBtn {
+                    text-decoration: none;
+                    color: black;
+                  }
+                }
               }
             }
           }
@@ -369,12 +367,160 @@
               font-size: 16px;
               font-weight: bold;
             }
-            p.no_comment {
-              padding:60px 0 50px 0;
-              text-align: center;
-              font-size: 16px;
-              font-weight: bold;
+            
+            .comment_container {
+              .date_container {
+                border-top: 1px #eee solid;
+                margin-top: 30px;
+                position: relative;
+                p.date {
+                  display: inline-block;
+                  font-size: 12px;
+                  color: #888;
+                  background: #fff;
+                  padding: 0 18px;
+                  position: absolute;
+                  top: -10px;
+                  left: 190px;
+                }
+              }
+            
+              ul.replay_container {
+                li.guest_replay {
+                  margin-top: 18px;
+                  display: flex;
+                  justify-content: space-between;
+                  .left {
+                    p {
+                      height: 40px;
+                      width: 40px;
+                      background: red;
+                      border-radius: 50%;
+                    }
+                  }
+                  .right {
+                    padding-top: 3px;
+                    width: 455px;
+                    text-align: left;
+                    .name {
+                      line-height: 1.4;
+                      color: #333;
+                      span.nickname {
+                        font-size: 14px;
+                      }
+                      span.userid {
+                        margin: 0 0 0 7px;
+                        font-size: 11px;
+                        color: #888;
+                      }
+                    }
+                    .box {
+                      display: table;
+                      margin: 5px 0 0 0;
+                      .txt_box {
+                        position: relative;
+                        display: table-cell;
+                        vertical-align: top;
+                        max-width: 362px;
+                        font-size: 13px;
+                        padding: 8px 15px 8px 15px;
+                        border-radius: 0 6px 6px 6px;
+                        border: 1px #ddd solid;
+                        background: #f6f7f8;
+                      }
+                      .meta {
+                        display: table-cell;
+                        vertical-align: bottom;
+                        width: 88px;
+                        padding: 0 0 0 8px;
+                        p.replay {
+                          font-size: 12px;
+                          color: #888;
+                        }
+                        p.time {
+                          margin: 5px 0 1px 3px;
+                          font-size: 11px;
+                          line-height: 1.2;
+                          color: #555;
+                        }
+                      }
+                    }
+                  }
+                }
+                li.self_replay {
+                  margin-top: 18px;
+                  display: flex;
+                  justify-content: space-between;
+                  .left {
+                    padding-top: 3px;
+                    width: 460px;
+                    text-align: left;
+                    .name {
+                      line-height: 1.4;
+                      color: #333;
+                      text-align: right;
+                      span.nickname {
+                        font-size: 14px;
+                      }
+                      span.userid {
+                        margin: 0 0 0 7px;
+                        font-size: 11px;
+                        color: #888;
+                      }
+                    }
+                    .box {
+                      display: table;
+                      margin: 5px 0 0 0;
+                      text-align: right;
+                      float: right;
+                      .meta {
+                        display: table-cell;
+                        vertical-align: bottom;
+                        width: 88px;
+                        padding: 0 10px 0 8px;
+                        p.replay {
+                          font-size: 12px;
+                          color: #888;
+                        }
+                        p.time {
+                          margin: 5px 0 1px 3px;
+                          font-size: 11px;
+                          line-height: 1.2;
+                          color: #555;
+                        }
+                      }
+                      .txt_box {
+                        position: relative;
+                        display: table-cell;
+                        vertical-align: top;
+                        max-width: 362px;
+                        font-size: 13px;
+                        padding: 8px 15px 8px 15px;
+                        border-radius: 6px 0 6px 6px;
+                        border: 1px #ddd solid;
+                        background: #f6f7f8;
+                        text-align: left;
+                      }
+                    }
+                  }
+                  .right {
+                    p {
+                      height: 40px;
+                      width: 40px;
+                      background: red;
+                      border-radius: 50%;
+                    }
+                    
+                  }
+                }
+              }
             }
+          }
+          p.no_comment {
+            padding: 50px 0 60px 0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
           }
           &__postBox {
             border-top: 1px #eee solid;
@@ -401,6 +547,19 @@
                   margin: 0 10px;
                   border-radius: 2px;
                 }
+              }
+            }
+            &__noText {
+              margin: 0 auto;
+              padding-top: 5px;
+              padding-bottom: 15px;
+              #commentLogin {
+                text-decoration: none;
+                color: blue;
+              }
+              #commentNewRegister {
+                text-decoration: none;
+                color: blue;
               }
             }
             &__right {
