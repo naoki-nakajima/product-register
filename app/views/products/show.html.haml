@@ -48,7 +48,9 @@
               コメント
         .productShow__body__left__action__comment
           .productShow__body__left__action__comment__container
-            %h3.title naokiさんへのコメント
+            %h3.title 
+              = @product.user.name 
+              さんへのコメント
             .comment_container
               - if @comments
                 - @comments.each do |comment|
@@ -71,7 +73,7 @@
                             %p.replay
                               返信する
                             %p.time
-                              2021/12/12
+                              = comment.created_at.strftime('%Y/%m/%d %H:%M:%S')
                     %li.self_replay
                       .left
                         .name
@@ -86,9 +88,7 @@
                             %p.time
                               2021/12/12
                           .txt_box
-                            @kanji4116
-                            かんじくん正直やな笑
-                            はるせいは可愛いもんな？笑笑
+                            = comment.text
                       .right
                         %p
               - else
